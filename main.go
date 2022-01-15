@@ -1,7 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/apspan/protogen/commons/proto/demo"
+)
 
 func main() {
-	fmt.Println("Hello, 世界")
+	x := demo.Demo{
+		Date:        "",
+		Value:       123,
+		SecondValue: 0,
+		ThirdValue:  0,
+		FourthValue: "Hello, 世界, Απόστολος",
+	}
+	fmt.Println(x.FourthValue)
 }
